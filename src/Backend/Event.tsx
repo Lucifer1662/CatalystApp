@@ -1,18 +1,11 @@
 import Project from "./Project";
 
 export default class Event {
-    name: string;
-    parentProject: Project;
+    public name: string;
+    private parentProject: Project;
     
-    constructor(name: string) {
-        
-        this.name = name;
+    constructor(name1: string) {
+        this.name = name1;
     }
    
-    public getName(){
-        return name;
-    }
-    public setName(name: string){
-        this.name = name;
-    }
 }
