@@ -5,14 +5,14 @@ import User from "./User";
 
 export default class Project{
     name: string;
-    class: Class;
+    classs: Class;
     //length is number of hours per week
     length: number; 
     members:User[]; 
     
     constructor(newClass : Class, newName: string) {
         this.name = newName; 
-        this.class = newClass;
+        this.classs = newClass;
     }
    
     public getName(){
@@ -22,10 +22,10 @@ export default class Project{
         this.name = name;
     }
     public getClass(){
-        return class{};
+        return this.classs;
     }
     public setClass(newClass: Class){
-        this.class = newClass;
+        this.classs = newClass;
     }
     public setLength(length: number){
         this.length = length;
@@ -33,9 +33,5 @@ export default class Project{
     public addMember(member:User){
         this.members.push(member); 
     }
-    public addMembers(newMembers:User[]){
-        this.members.push(newMembers);
-    }
     
-
 }

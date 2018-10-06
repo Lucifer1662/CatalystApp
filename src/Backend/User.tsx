@@ -20,9 +20,6 @@ export default class User {
     public addClass(newClass:Class){
         this.class.push(newClass);
     }
-    public addClasses(newClasses:Class[]){
-        this.class.push(newClasses);
-    }
     public addPoints(point: number){
         this.score += point; 
     }
